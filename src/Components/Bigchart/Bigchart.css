@@ -1,0 +1,173 @@
+.bigchart {
+  margin: 0px;
+  padding: 24px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.bigchart-header {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bigchartTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.bigchartSelect {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.bigchartSelect > h5 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #4B5563;
+}
+
+.bigchartSelect > select {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+  background: #F9FAFB;
+  cursor: pointer;
+  color: #374151;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.bigchartSelect > select:hover {
+  border-color: #D1D5DB;
+  background: #F3F4F6;
+}
+
+.errordata {
+  margin-left: 10px;
+  color: red;
+  font-size: 1rem;
+}
+
+/* Export controls styling */
+.export-dropdown {
+  position: relative;
+}
+
+.export-button {
+  padding: 8px 16px;
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #374151;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.export-button:hover {
+  background: #F3F4F6;
+  border-color: #D1D5DB;
+}
+
+.export-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 4px;
+  background: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  min-width: 160px;
+  z-index: 1000;
+  border: 1px solid #E2E8F0;
+}
+
+.export-menu button {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  color: #4B5563;
+  transition: all 0.2s ease;
+}
+
+.export-menu button:hover {
+  background: #F3F4F6;
+  color: #4F46E5;
+}
+
+.csv-link {
+  text-decoration: none;
+  width: 100%;
+}
+
+.csv-link button {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  color: #4B5563;
+  transition: all 0.2s ease;
+}
+
+.csv-link button:hover {
+  background: #F3F4F6;
+  color: #4F46E5;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 1280px) {
+  .bigchart {
+    padding: 28px;
+  }
+  
+  .bigchartTitle {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .bigchart {
+    padding: 32px;
+  }
+  
+  .bigchartTitle {
+    font-size: 1.7rem;
+  }
+  
+  .ResponsiveContainer {
+    aspect: 2 / 1;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .bigchart {
+    padding: 36px;
+  }
+  
+  .bigchartTitle {
+    font-size: 1.8rem;
+  }
+  
+  .ResponsiveContainer {
+    aspect: 2.25 / 1;
+  }
+}

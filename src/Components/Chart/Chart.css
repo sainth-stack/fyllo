@@ -1,0 +1,154 @@
+.chart {
+  margin: 0px;
+  padding: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  background: white;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1536px) {
+  .chart {
+    margin: 15px;
+    padding: 15px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .chart {
+    margin: 12px;
+    padding: 12px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .chart {
+    margin: 10px;
+    padding: 10px;
+    height: 350px;
+  }
+}
+
+.chartTitle {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.export-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.export-button {
+  padding: 8px 16px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* .export-button:hover {
+  background: #4F46E5;
+  box-shadow: 0 2px 4px rgba(99, 102, 241, 0.2);
+} */
+
+.export-options {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 4px;
+  background: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  display: none;
+  min-width: 160px;
+  z-index: 1000;
+  border: 1px solid #E2E8F0;
+}
+
+.export-options.active {
+  display: block;
+}
+
+.export-options button {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  color: #4B5563;
+  transition: all 0.2s ease;
+}
+
+.export-options button:hover {
+  background: #F3F4F6;
+  color: #4F46E5;
+}
+
+.chartSelect {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chartSelect>select {
+  margin-left: 20px;
+  border: 1px solid #E5E7EB;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: white;
+  color: #4B5563;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chartSelect>select:hover {
+  border-color: #4F46E5;
+}
+
+.csv-link {
+  text-decoration: none;
+  width: 100%;
+}
+
+.csv-link button {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  color: #4B5563;
+  transition: all 0.2s ease;
+}
+
+.csv-link button:hover {
+  background: #F3F4F6;
+  color: #4F46E5;
+}
+
+.chart-container {
+  flex: 1;
+  min-height: 0;
+  height: 400px;
+  width: 100%;
+}

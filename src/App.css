@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 60px);
+}
+
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 250px;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+.others {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  margin-left: 250px;
+  height: calc(100vh - 60px);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background: rgba(207, 207, 207, 0.22);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 1px solid var(--gray-300, #e6e6e6);
+  background: #fff;
+}
+
+
+.custom-font{
+  font-family: "Work Sans", sans-serif !important;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1536px) {
+  .sidebar {
+    width: 220px;
+  }
+  
+  .others {
+    margin-left: 220px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .sidebar {
+    width: 200px;
+  }
+  
+  .others {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .sidebar {
+    width: 180px;
+  }
+  
+  .others {
+    margin-left: 180px;
+  }
+}
